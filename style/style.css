@@ -17,23 +17,23 @@ body {
 
 p {
     color: var(--dark-grey);
-    padding: 10px 5%;
+    padding: 5px 5%;
 }
 
 header {
     display: inline-block;
-    width: 100%;
+    width: 109%;
     height: 100px;
     background-color: var(--blue);
 }
 
 h1 {
     color: var(--main-bg-color);
-    background-color: var(--dark-green);
+    background-color: var(--blue);
     font-size: 150%;
     margin: 5px;
     padding: 10px;
-    border: 5px solid var(--dark-green);
+    border: 5px solid var(--blue);
     border-radius: 7px;
     width: fit-content;
 }

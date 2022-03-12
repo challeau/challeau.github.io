@@ -1,15 +1,13 @@
 :root {
-    --main-bg-color: #F5F5F4;
-    --grey: #CBCACE;
-    --light-grey: #EBEBEB;
-    --dark-grey: #8C8A93;
-    --green: #90E39A;
-    --dark-green: #8EB797;
-    --accent-purple: #8C2C6C;
-    --accent-yellow: #FFC233;
-    --accent-red: #FF6542;
+    --main-bg-color: #F4F0EB;
+    --grey: #888C90;
+    --light-grey: #D9D9D8;
+    --dark-grey: #363F47;
+    --blue: #9EC0D5;
+    --yellow: #F5B83D;
+    --red: #FF6B64;
+    --green: #B8E788;
 }
-
 
 body {
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif !important;
@@ -19,18 +17,14 @@ body {
 
 p {
     color: var(--dark-grey);
-    padding: 10px 5%;
+    padding: 100px 5%;
 }
 
 header {
-    background: url("pics/banner.png");
     display: inline-block;
     width: 100%;
     height: 100px;
-    background-color: var(--green);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: var(--blue);
 }
 
 h1 {

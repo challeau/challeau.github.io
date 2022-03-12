@@ -34,13 +34,13 @@ p {
 
 .first-glance {
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     background-color: var(--blue);
     margin: -1rem -1rem 1rem;
     padding: 1.25rem 1rem;
 }
 
-header img {
+.first-glance img {
     margin-left: 1%;
 }
 

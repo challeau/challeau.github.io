@@ -13,6 +13,7 @@ body {
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif !important;
     background-color: var(--main-bg-color);
     position: relative;
+    overflow-x: hidden;
 }
 
 p {
@@ -21,10 +22,15 @@ p {
 }
 
 header {
-    display: inline-block;
-    width: 109%;
-    height: 100px;
+    width: 100%;
+    height: auto;
     background-color: var(--blue);
+    margin: -1rem -1rem;
+    padding: 1.25rem 1rem;
+}
+
+header img {
+    margin-left: 5%;
 }
 
 h1 {

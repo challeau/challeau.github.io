@@ -29,6 +29,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="style/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="style/icon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- JS scripts-->
+    <script>
+      window.onscroll = function() {
+	growShrinkLogo()
+      };
+
+      function growShrinkLogo() {
+	var Logo = document.getElementById("logo-name")
+	if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+	  Logo.style.width = '30px';
+	}
+	else {
+	  Logo.style.width = '60px';
+	}
+      }
+    </script>
   </head>
 
   <body>
@@ -43,7 +60,7 @@
 
     <main>
       <div class="first-glance">
-	<img alt="logo" src="style/icon/logo-name.png" width="500px"/>
+	<img id="logo-name" alt="logo" src="style/icon/logo-name.png" width="500px"/>
 	<h1>Welcome to my site</h1>
 	<h2></h2>
       </div>

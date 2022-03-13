@@ -31,16 +31,16 @@
     <link rel="manifest" href="favicon/site.webmanifest">
 
     <!-- JS scripts-->
-    <script>
-      window.onscroll = function() {scrollFunction()};
+    <!-- <script> -->
+    <!--   window.onscroll = function() {scrollFunction()}; -->
 
-      function scrollFunction() {
-	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-	  document.getElementById("logoName").style.height = "100px";
-	} else {
-	  document.getElementById("logoName").style.height = "500px";
-	}
-    </script>
+    <!--   function scrollFunction() { -->
+    <!-- 	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) { -->
+    <!-- 	  document.getElementById("logoName").style.height = "100px"; -->
+    <!-- 	} else { -->
+    <!-- 	  document.getElementById("logoName").style.height = "500px"; -->
+    <!-- 	} -->
+    <!-- </script> -->
   </head>
 
   <body>
@@ -59,7 +59,19 @@
 	<h1>Welcome to my site</h1>
 	<h2></h2>
       </div>
-      
+
+      <div id="header">Header</div>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	document.getElementById("header").style.fontSize = "30px";
+	} else {
+	document.getElementById("header").style.fontSize = "90px";
+	}
+	}
+    </script>
+    
       <div class="contents">
 	<article>
 	  <h2>Here's an article</h2>

@@ -32,15 +32,19 @@ p {
     padding: 5px 5%;
 }
 
-.first-glance {
+.firstGlance {
     width: 100vw;
     height: 75vh;
     background-color: var(--blue);
     margin: -1rem -1rem 25vh;
     padding: 1.25rem 1rem;
-    position: fixed;
+}
+
+.firstGlance #logoName {
+    width: 500px;
     top: 0;
     transition: 0.2s;
+    margin-left: 1%;
 }
 
 nav {

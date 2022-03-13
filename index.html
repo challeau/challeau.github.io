@@ -32,19 +32,14 @@
 
     <!-- JS scripts-->
     <script>
-      window.onscroll = function() {
-	growShrinkLogo()
-      };
-
-      function growShrinkLogo() {
-	var Logo = document.getElementById("logo-name")
-	if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-	  Logo.style.width = '30px';
-	}
-	else {
-	  Logo.style.width = '60px';
-	}
-      }
+      jQuery(window).scroll(function () {
+        var imageWidth = jQuery("img#logo-name").width();
+        var stopImage =800;
+        if (imageWidth >= stopImage) {
+          var s = imageWidth - Math.min(imageWidth, $(document).scrollTop() * 0.5);
+          jQuery("img#logo-name").width(s);
+        }
+      });
     </script>
   </head>
 

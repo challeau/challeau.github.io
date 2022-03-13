@@ -40,7 +40,8 @@ p {
     padding: 1.25rem 1rem;
 }
 
-.first-glance img {
+.first-glance #logo-name {
+    transition: 0.2s;
     margin-left: 1%;
 }
 

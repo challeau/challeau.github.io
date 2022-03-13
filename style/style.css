@@ -41,6 +41,8 @@ p {
 }
 
 .first-glance #logo-name {
+    position: fixed;
+    top: 0;
     transition: 0.2s;
     margin-left: 1%;
 }

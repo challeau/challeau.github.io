@@ -51,10 +51,12 @@ p {
     height: 70vh;
     width: 70vh;
     margin-left: 1%;
-    background: url('icon/logo-name.png');
-    background-position: center;
-    background-size: contain;
     z-index: 1;
+}
+
+.logoName img {
+    width: auto;
+    height: auto;
 }
 
 nav {

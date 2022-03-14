@@ -98,13 +98,13 @@
       if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))	
       {
     	let logoNewSize = 75 - (1 - offsetY) * 100;
-    	let containerNewMargin = 25 - (1 - offsetY) * 100;
+    	let containerNewMargin = 25 - (1 - offsetY);
     	if (logoNewSize > 15)
     	{
     	  logo.style.width = logoNewSize + 'vh';
     	  logo.style.height = logoNewSize + 'vh';
 	  if (containerNewMargin > 5){
-	    container.style.margin = '-1rem -1rem ' + ((1 - offsetY) * 100) + 'vh';
+	    container.style.margin = '-1rem -1rem ' + containerNewMargin + 'vh';
 	    console.log(containerNewMargin);
 	  }
     	}

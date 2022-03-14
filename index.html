@@ -107,33 +107,34 @@
     var _jsPrefix = pre.lowercase;
     if (_jsPrefix == 'moz') _jsPrefix = 'Moz'
     var _cssPrefix = pre.css;
-    var _positions = [{
-      name: 'logoName',
-      start: {
-	percent: 0.01,
-	x: 0.15,
-	y: 0.0025
+    var _positions = [
+      {
+	name: 'logoName',
+	start: {
+	  percent: 0.01,
+	  x: 0.15,
+	  y: 0.0025
+	},
+	end: {
+	  percent: 0.05,
+	  x: 0.0,
+	  y: 0.0
+	}
       },
-      end: {
-	percent: 0.05,
-	x: 0.0,
-	y: 0.0
-      }
-    },
-		      {
-			name: 'li',
-			start: {
-			  percent: 0.01,
-			  x: 0.15,
-			  y: 0.0025
-			},
-			end: {
-			  percent: 0.05,
-			  x: 0.0,
-			  y: 0.0
-			}
-		      }]
-    
+      {
+	name: 'li',
+	start: {
+	  percent: 0.01,
+	  x: 0.15,
+	  y: 0.0025
+	},
+	end: {
+	  percent: 0.05,
+	  x: 0.0,
+	  y: 0.0
+	}
+      }]
+
     resize();
     initMovingElements();
 

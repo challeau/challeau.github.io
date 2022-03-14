@@ -107,6 +107,7 @@
     let containerBottom = container.getBoundingClientRect().bottom;
     if (containerBottom > 0)
     {
+      console.log(containerBottom);
       logo.style.width = logo.style.width * 1 / containerBottom + 'vh';
       logo.style.width = logo.style.height * 1 / containerBottom + 'vh';
     }

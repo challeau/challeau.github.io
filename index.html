@@ -67,9 +67,11 @@
 
 	function scrollFunction() {
 	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-	    document.getElementById("header").style.fontSize = "30px";
+	    document.getElementById("firstGlance").style.height = "10vh";
+	    document.getElementById("logoName").style.height = "2vh";
 	  } else {
-	    document.getElementById("header").style.fontSize = "90px";
+	    document.getElementById("firstGlance").style.height = "75vh";
+	    	    document.getElementById("logoName").style.height = "10vh";
 	  }
 	}
       </script>

@@ -44,6 +44,32 @@ p {
     z-index: 0;
 }
 
+.firstGlance .title {
+    display: inline-block;
+    width: 50vw;
+    right: 10vw;
+}
+
+.title h1 {
+    color: white;
+    font-family: MonumentExtended, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.title h3 {
+    color: white;
+    font-family: TallFilmsExpanded;
+    font-style: oblique;
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+#socials {
+    width: 4vh;
+    height: auto;
+}
+
 .logoName {
     /* position: absolute; */
     position: fixed;

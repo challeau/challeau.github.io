@@ -97,11 +97,15 @@
       let offsetY = containerBottom / (0.75 * window.innerHeight);
       if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))	
       {
-    	let new_size = 75 - (1 - offsetY) * 100;
-    	if (new_size > 15)
+    	let logoNewSize = 75 - (1 - offsetY) * 100;
+    	let containerNewPadding = 25 - (1 - offsetY) * 100;
+    	if (logoNewSize > 15)
     	{
-    	  logo.style.width = new_size + 'vh';
-    	  logo.style.height = new_size + 'vh';
+    	  logo.style.width = logoNewSize + 'vh';
+    	  logo.style.height = logoNewSize + 'vh';
+	  if (containerNewPadding > 5){
+	    container.style.padding = '-1rem -1rem' + ((1 - offsetY) * 100) + 'vh';
+	  }
     	}
     	else
     	{

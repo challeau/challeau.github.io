@@ -82,8 +82,7 @@
       let logo = document.getElementsByClassName('logoName')[0];
       let containerBottom = container.getBoundingClientRect().bottom;
       let offsetY = containerBottom / (0.75 * window.innerHeight);
-      if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))
-	
+      if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))	
       {
 	logo.src='style/icon/logo.png'
 	let new_size = 70 - (1 - offsetY) * 100;

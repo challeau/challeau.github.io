@@ -46,7 +46,8 @@ p {
 
 .logoName {
     display: block;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     top: 0px;
     width: 70vh;
     height: 70vh;

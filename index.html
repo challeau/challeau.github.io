@@ -100,8 +100,10 @@
       var elemRect = container.getBoundingClientRect();
       var offset   = elemRect.top - bodyRect.top;
 
-      logo.style.width = 75 - scrollPercent * offset / 10  + 'vh';
-      logo.style.height = 75 - scrollPercent * offset / 10 + 'vh';
+      logo.style.width = 75 - offset / 10  + 'vh';
+      logo.style.height = 75 - offset / 10 + 'vh';
+      alert('Element is ' + offset + ' vertical pixels from <body>');
+
     });
   </script>
 

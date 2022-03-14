@@ -108,7 +108,7 @@
       let containerBottom = container.getBoundingClientRect().bottom;
       let offsetY = containerBottom / (0.75 * window.innerHeight);
       console.log(containerBottom);
-      if (containerBottom <= (window.innerHeight || document.documentElement.clientHeight))
+      if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))
       {
 	logo.style.width = 70 - offsetY * 100 + 'vh';
 	logo.style.height = 70 - offsetY * 100 + 'vh';

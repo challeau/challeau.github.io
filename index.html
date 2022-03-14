@@ -85,12 +85,11 @@
       let offsetY = containerBottom / (0.75 * window.innerHeight);
       if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))	
       {
-    	let new_size = 70 - (1 - offsetY) * 100;
-    	if (new_size > 20)
+    	let new_size = 75 - (1 - offsetY) * 100;
+    	if (new_size > 15)
     	{
     	  logo.style.width = new_size + 'vh';
     	  logo.style.height = new_size + 'vh';
-	  navbar.left = new_size + 'vh';
     	}
     	else
     	{

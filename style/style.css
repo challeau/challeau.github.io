@@ -48,8 +48,8 @@ p {
     display: block;
     position: absolute;
     top: 0px;
-    height: 70vh;
-    width: 70vh;
+    width: 100px;
+    height: 100px;
     margin-left: 1%;
     z-index: 1;
 }

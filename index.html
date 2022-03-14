@@ -46,7 +46,7 @@
 
     <div class="firstGlance">
       <div class="logoName">
-	<img alt="logoName" src="style/icon/logo-name.png"/>
+	<img alt="logoName" src="style/icon/logo-name-nobg.png"/>
       </div>
     </div>
 
@@ -84,7 +84,9 @@
       let offsetY = containerBottom / (0.75 * window.innerHeight);
       console.log(containerBottom + ' - ' + offsetY);
       if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))
+	
       {
+	logo.src='style/icon/logo.png'
 	let new_size = 70 - (1 - offsetY) * 100;
 	if (new_size > 20)
 	{

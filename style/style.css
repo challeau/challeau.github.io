@@ -70,7 +70,7 @@ nav {
 .navbar {
     list-style-type: none;
     margin: 0px;
-    padding: 4.5vh 20vh;
+    padding: 4.5vh 15vh;
     overflow: hidden;
     background-color: var(--blue);
 }

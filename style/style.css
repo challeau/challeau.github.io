@@ -45,9 +45,11 @@ p {
 }
 
 .firstGlance .title {
-    display: inline-block;
+    display: block;
+    position: absolute;
     width: 50vw;
     right: 10vw;
+    z-index: 5;
 }
 
 .title h1 {
@@ -61,13 +63,15 @@ p {
     color: white;
     font-family: TallFilmsExpanded;
     font-style: oblique;
-    font-size: 1.5rem;
-    letter-spacing: 1rem;
+    font-size: 1rem;
+    letter-spacing: 0rem;
 }
 
 #socials {
+    display: inline-block;
     width: 4vh;
     height: auto;
+    
 }
 
 .logoName {

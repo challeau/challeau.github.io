@@ -35,17 +35,21 @@ p {
 .firstGlance {
     width: 100vw;
     height: 75vh;
-    background-color: var(--blue);
     margin: -1rem -1rem 25vh;
     padding: 1.25rem 1rem;
+    background-color: var(--blue);
+    overflow: hidden;
+    position: absolute;
 }
 
-.firstGlance #logoName {
+.logoName {
+    display: block;
+    position: absolute;
+    background: url('icons/logo-name');
     height: 70vh;
-    width: auto;
+    width: 70vh;
     top: 0;
     margin-left: 1%;
-    transform: 2s;
 }
 
 nav {

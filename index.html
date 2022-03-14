@@ -54,22 +54,7 @@
     </nav>
 
     <main>
-      <div class="firstGlance">
-	<img id="logoName" alt="logo" src="style/icon/logo-name.png"/>
-      </div>
-
-      <script>
-	// When the user scrolls down 50px from the top of the document, resize the header's font size
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-	  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-	    document.getElementById("logoName").style.height = "40vh";
-	  } else {
-	    	    document.getElementById("logoName").style.height = "70vh";
-	  }
-	}
-      </script>
+      <div class="firstGlance"></div>
 
       <div class="contents">
 	<article>
@@ -96,4 +81,32 @@
       </div>
     </main>
   </body>
+
+  <script>
+    // window.onscroll = function() {scrollFunction()};
+
+    // function scrollFunction() {
+    //   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    // 	document.getElementById("logoName").style.height = "40vh";
+    //   } else {
+    // 	document.getElementById("logoName").style.height = "70vh";
+    //   }
+    // }
+    var container = document.getElementById('container');
+    var windowHeight = window.innerHeight;
+    var scrollArea = 1000 - windowHeight;
+    var logo = document.getElementsByClassName('logoName');
+
+    // update position of square 1 and square 2 when scroll event fires.
+    window.addEventListener('scroll', function() {
+      var scrollTop = window.pageYOffset || window.scrollTop;
+      // scrollTop == measurement of the distance from the element's top to its topmost visible content
+      var scrollPercent = scrollTop / scrollArea || 0;
+
+      logo.style.width = 100 - scrollPercent * 1 + 'vh';
+      logo.style.height = 100 - scrollPercent * 1 + 'vh';
+    });
+
+  </script>
+
 </html>

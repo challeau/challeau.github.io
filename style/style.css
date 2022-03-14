@@ -54,10 +54,10 @@ p {
 
 .title h1 {
     color: white;
-    font-family: MonumentExtended, Arial, sans-serif;
-    font-weight: bold;
+    font-family: MonumentExtendedUltrabold, Arial, sans-serif;
+/*     font-weight: bold; */
     font-size: 2.5rem;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
 }
 
 .title h3 {

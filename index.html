@@ -77,29 +77,29 @@
 
   <script>
     /* resize logo proportionally to scroll*/
-    window.addEventListener('scroll', function() {
-      let container = document.getElementsByClassName('firstGlance')[0];
-      let logo = document.getElementsByClassName('logoName')[0];
-      let containerBottom = container.getBoundingClientRect().bottom;
-      let offsetY = containerBottom / (0.75 * window.innerHeight);
-      if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))	
-      {
-	let new_size = 70 - (1 - offsetY) * 100;
-	if (new_size > 20)
-	{
-	  logo.style.width = new_size + 'vh';
-	  logo.style.height = new_size + 'vh';
-	}
-	else
-	{
-	  logo.style.width = '20vh';
-	  logo.style.height = '20vh';
-	  logo.top = '10px';
-	  logo.left = '0px';
-	  logo.position = 'inline-block';
-	}
-      }
-    });
+    // window.addEventListener('scroll', function() {
+    //   let container = document.getElementsByClassName('firstGlance')[0];
+    //   let logo = document.getElementsByClassName('logoName')[0];
+    //   let containerBottom = container.getBoundingClientRect().bottom;
+    //   let offsetY = containerBottom / (0.75 * window.innerHeight);
+    //   if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))	
+    //   {
+    // 	let new_size = 70 - (1 - offsetY) * 100;
+    // 	if (new_size > 20)
+    // 	{
+    // 	  logo.style.width = new_size + 'vh';
+    // 	  logo.style.height = new_size + 'vh';
+    // 	}
+    // 	else
+    // 	{
+    // 	  logo.style.width = '20vh';
+    // 	  logo.style.height = '20vh';
+    // 	  logo.top = '10px';
+    // 	  logo.left = '0px';
+    // 	  logo.position = 'inline-block';
+    // 	}
+    //   }
+    // });
 
     /* move logo */
     var _containerHeight = 4000;

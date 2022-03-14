@@ -55,8 +55,8 @@ p {
 }
 
 .logoName img {
-    width: auto;
-    height: auto;
+    width: inherit;
+    height: inherit;
 }
 
 nav {

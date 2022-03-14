@@ -80,6 +80,7 @@
     window.addEventListener('scroll', function() {
       let container = document.getElementsByClassName('firstGlance')[0];
       let logo = document.getElementsByClassName('logoName')[0];
+      let navbar = document.getElementsByClassName('navbar')[0];
       let containerBottom = container.getBoundingClientRect().bottom;
       let offsetY = containerBottom / (0.75 * window.innerHeight);
       if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))	
@@ -89,6 +90,7 @@
     	{
     	  logo.style.width = new_size + 'vh';
     	  logo.style.height = new_size + 'vh';
+	  navbar.left = new_size + 'vh';
     	}
     	else
     	{
@@ -121,19 +123,20 @@
 	  y: 0.0
 	}
       },
-      {
-	name: 'navbar',
-	start: {
-	  percent: 0.01,
-	  x: 0.0,
-	  y: 0.0
-	},
-	end: {
-	  percent: 0.05,
-	  x: 0.2,
-	  y: 0.0
-	}
-      }]
+      // {
+      // 	name: 'navbar',
+      // 	start: {
+      // 	  percent: 0.01,
+      // 	  x: 0.0,
+      // 	  y: 0.0
+      // 	},
+      // 	end: {
+      // 	  percent: 0.05,
+      // 	  x: 0.2,
+      // 	  y: 0.0
+      // 	}
+      // }
+    ]
 
     resize();
     initMovingElements();

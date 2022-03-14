@@ -149,10 +149,12 @@
 	if(_scrollPercent <= p.start.percent) {
 	  p.target.x = p.start.x*_width;
 	  p.target.y = p.start.y*_containerHeight;
-	} else if(_scrollPercent >= p.end.percent) {
+	}
+	else if(_scrollPercent >= p.end.percent) {
 	  p.target.x = p.end.x*_width;
 	  p.target.y = p.end.y*_containerHeight;
-	} else {
+	}
+	else {
 	  p.target.x = p.start.x*_width + (p.diff.x*(_scrollPercent-p.start.percent)/p.diff.percent*_width);
 	  p.target.y = p.start.y*_containerHeight + (p.diff.y*(_scrollPercent-p.start.percent)/p.diff.percent*_containerHeight);
 	}
@@ -160,7 +162,8 @@
 	if(!p.current.x) {
 	  p.current.x = p.target.x;
 	  p.current.y = p.target.y;
-	} else {
+	}
+	else {
 	  p.current.x = p.current.x + (p.target.x - p.current.x)*0.1;
 	  p.current.y = p.current.y + (p.target.y - p.current.y)*0.1;
 	}

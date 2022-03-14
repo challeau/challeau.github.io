@@ -46,7 +46,7 @@ p {
 .logoName {
     display: block;
     position: absolute;
-    background: url('icons/logo-name');
+    background: url('icons/logo-name.png');
     height: 70vh;
     width: 70vh;
     top: 0;

@@ -48,11 +48,12 @@ p {
 .logoName {
     display: block;
     position: absolute;
-    background: url('icon/logo-name.png');
+    top: 0px;
     height: 70vh;
     width: 70vh;
-    top: 0;
     margin-left: 1%;
+    background: url('icon/logo-name.png');
+    background-position: center;
     z-index: 1;
 }
 

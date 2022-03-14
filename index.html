@@ -119,8 +119,21 @@
 	x: 0.0,
 	y: 0.0
       }
-    }]
-
+    },
+		      {
+			name: 'li',
+			start: {
+			  percent: 0.01,
+			  x: 0.15,
+			  y: 0.0025
+			},
+			end: {
+			  percent: 0.05,
+			  x: 0.0,
+			  y: 0.0
+			}
+		      }]
+    
     resize();
     initMovingElements();
 
@@ -169,6 +182,7 @@
 	_movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + p.current.x + 'px, ' +
 	  p.current.y + 'px, 0px)';
       }
+      if 
     }
 
 

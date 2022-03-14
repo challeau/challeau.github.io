@@ -102,15 +102,17 @@
     //   logo.style.height = 75 - offset / 10 + 'vh';
     // });
 
-    let container = document.getElementsByClassName('firstGlance')[0];
-    let logo = document.getElementsByClassName('logoName')[0];
-    let containerBottom = container.getBoundingClientRect().bottom;
-    if (containerBottom > 0)
-    {
-      console.log(containerBottom);
-      logo.style.width = logo.style.width * 1 / containerBottom + 'vh';
-      logo.style.width = logo.style.height * 1 / containerBottom + 'vh';
-    }
+    window.addEventListener('scroll', function() {
+      let container = document.getElementsByClassName('firstGlance')[0];
+      let logo = document.getElementsByClassName('logoName')[0];
+      let containerBottom = container.getBoundingClientRect().bottom;
+      if (containerBottom > 0)
+      {
+	console.log(containerBottom);
+	logo.style.width = logo.style.width * 1 / containerBottom + 'vh';
+	logo.style.width = logo.style.height * 1 / containerBottom + 'vh';
+      }
+    });
   </script>
 
 </html>

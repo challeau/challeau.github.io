@@ -59,6 +59,7 @@ nav {
     top: 0;
     left: -0rem;
     width: 110vw;
+    z-index: 2;
 }
 
 nav ul {

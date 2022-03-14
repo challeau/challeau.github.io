@@ -106,11 +106,12 @@
       let container = document.getElementsByClassName('firstGlance')[0];
       let logo = document.getElementsByClassName('logoName')[0];
       let containerBottom = container.getBoundingClientRect().bottom;
+      let offsetY = containerBottom / 0.75 * window.innerHeight;
       if (containerBottom > 10)
       {
 	console.log(containerBottom);
-	logo.style.width = logo.style.width - 0.1 * containerBottom + 'vh';
-	logo.style.width = logo.style.height - 0.1 * containerBottom + 'vh';
+	logo.style.width = logo.style.width * offsetY * 20 + 'vh';
+	logo.style.width = logo.style.height * offsetY * 20 + 'vh';
       }
     });
   </script>

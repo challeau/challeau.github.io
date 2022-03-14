@@ -41,7 +41,7 @@ p {
     padding: 1.25rem 1rem;
     background-color: var(--blue);
     overflow: hidden;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .logoName {

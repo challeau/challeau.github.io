@@ -86,9 +86,6 @@
     //   }
     // }
 
-    var bodyRect = document.body.getBoundingClientRect(),
-    elemRect = element.getBoundingClientRect(),
-    offset   = elemRect.top - bodyRect.top;
 
     var container = document.getElementById('firstGlance');
     var windowHeight = window.innerHeight;
@@ -99,6 +96,9 @@
     var scrollTop = window.pageYOffset || window.scrollTop;
     // scrollTop == measurement of the distance from the element's top to its topmost visible content
       var scrollPercent = scrollTop / scrollArea || 0;
+      var bodyRect = document.body.getBoundingClientRect(),
+	  elemRect = container.getBoundingClientRect(),
+	  offset   = elemRect.top - bodyRect.top;
 
       logo.style.width = 75 - scrollPercent * offest + 'vh';
       logo.style.height = 75 - scrollPercent * offset + 'vh';

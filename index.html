@@ -77,7 +77,6 @@
 
   <script>
     // window.onscroll = function() {scrollFunction()};
-
     // function scrollFunction() {
     //   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     // 	document.getElementById("logoName").style.height = "40vh";
@@ -86,25 +85,36 @@
     //   }
     // }
 
+    // var container = document.getElementsByClassName('firstGlance')[0];
+    // var windowHeight = window.innerHeight;
+    // var scrollArea = 1000 - windowHeight;
+    // var logo = document.getElementsByClassName('logoName')[0];
+    // // update position of square 1 and square 2 when scroll event fires.
+    // window.addEventListener('scroll', function() {
+    // var scrollTop = window.pageYOffset || window.scrollTop;
+    // // scrollTop == measurement of the distance from the element's top to its topmost visible content
+    //   var scrollPercent = scrollTop / scrollArea || 0;
+    //   var bodyRect = document.body.getBoundingClientRect();
+    //   var elemRect = container.getBoundingClientRect();
+    //   var offset   = elemRect.top - bodyRect.top;
 
-    var container = document.getElementsByClassName('firstGlance')[0];
-    var windowHeight = window.innerHeight;
-    var scrollArea = 1000 - windowHeight;
-    var logo = document.getElementsByClassName('logoName')[0];
-    // update position of square 1 and square 2 when scroll event fires.
-    window.addEventListener('scroll', function() {
-    var scrollTop = window.pageYOffset || window.scrollTop;
-    // scrollTop == measurement of the distance from the element's top to its topmost visible content
-      var scrollPercent = scrollTop / scrollArea || 0;
-      var bodyRect = document.body.getBoundingClientRect();
-      var elemRect = container.getBoundingClientRect();
-      var offset   = elemRect.top - bodyRect.top;
+    //   logo.style.width = 75 - offset / 10  + 'vh';
+    //   logo.style.height = 75 - offset / 10 + 'vh';
+    // });
 
-      logo.style.width = 75 - offset / 10  + 'vh';
-      logo.style.height = 75 - offset / 10 + 'vh';
-      alert('Element is ' + offset + ' vertical pixels from <body>');
-
-    });
+    let container = document.querySelector('firstGlance');
+    let logo = document.querySelector('logoName');
+    let containerBottom = container.getBoundingClientRect().bottom;
+    if (containerBottom <= (window.innerHeight || document.documentElement.clientHeight))
+    {
+      logo.style.width = logo.style.width * 1 / containerBottom + 'vh';
+      logo.style.width = logo.style.height * 1 / containerBottom + 'vh';
+    }
+    else
+    {
+      logo.style.width = '10vh';
+      logo.style.height = '10vh';
+    }
   </script>
 
 </html>

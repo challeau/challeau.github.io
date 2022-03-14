@@ -84,7 +84,6 @@
       let offsetY = containerBottom / (0.75 * window.innerHeight);
       if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))	
       {
-	logo.src='style/icon/logo.png'
 	let new_size = 70 - (1 - offsetY) * 100;
 	if (new_size > 20)
 	{
@@ -97,7 +96,7 @@
 	  logo.style.height = '20vh';
 	  logo.top = '10px';
 	  logo.left = '0px';
-	  logo.position = 'fixed';
+	  logo.position = 'inline-block';
 	}
       }
     });

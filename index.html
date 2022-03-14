@@ -76,32 +76,7 @@
   </body>
 
   <script>
-    // window.onscroll = function() {scrollFunction()};
-    // function scrollFunction() {
-    //   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    // 	document.getElementById("logoName").style.height = "40vh";
-    //   } else {
-    // 	document.getElementById("logoName").style.height = "70vh";
-    //   }
-    // }
-
-    // var container = document.getElementsByClassName('firstGlance')[0];
-    // var windowHeight = window.innerHeight;
-    // var scrollArea = 1000 - windowHeight;
-    // var logo = document.getElementsByClassName('logoName')[0];
-    // // update position of square 1 and square 2 when scroll event fires.
-    // window.addEventListener('scroll', function() {
-    // var scrollTop = window.pageYOffset || window.scrollTop;
-    // // scrollTop == measurement of the distance from the element's top to its topmost visible content
-    //   var scrollPercent = scrollTop / scrollArea || 0;
-    //   var bodyRect = document.body.getBoundingClientRect();
-    //   var elemRect = container.getBoundingClientRect();
-    //   var offset   = elemRect.top - bodyRect.top;
-
-    //   logo.style.width = 75 - offset / 10  + 'vh';
-    //   logo.style.height = 75 - offset / 10 + 'vh';
-    // });
-
+    /* resize logo proportionally to scroll*/
     window.addEventListener('scroll', function() {
       let container = document.getElementsByClassName('firstGlance')[0];
       let logo = document.getElementsByClassName('logoName')[0];
@@ -110,8 +85,20 @@
       console.log(containerBottom + ' - ' + offsetY);
       if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))
       {
-	logo.style.width = 70 - (1 - offsetY) * 100 + 'vh';
-	logo.style.height = 70 - (1 - offsetY) * 100 + 'vh';
+	let new_size = 70 - (1 - offsetY) * 100;
+	if (new_size > 20)
+	{
+	  logo.style.width = new_size + 'vh';
+	  logo.style.height = new_size + 'vh';
+	}
+	else
+	{
+	  logo.style.width = '20vh';
+	  logo.style.height = '20vh';
+	  logo.top = 10px;
+	  logo.left = 0px;
+	  logo.position = fixed;
+	}
       }
     });
   </script>

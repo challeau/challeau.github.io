@@ -45,7 +45,6 @@ p {
 }
 
 .logoName {
-    display: block;
     /* position: absolute; */
     position: fixed;
     top: 0px;

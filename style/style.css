@@ -83,6 +83,7 @@ nav {
 .navbar li a {
     display: block;
     color: white;
+    font-family: MonumentExtended, Arial, sans-serif;
     text-decoration: auto; 
     text-align: center;
     padding: 10px 12px;

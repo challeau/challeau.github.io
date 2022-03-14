@@ -42,7 +42,6 @@ p {
     background-color: var(--blue);
     overflow: hidden;
     z-index: 0;
-    /* position: absolute; */
 }
 
 .logoName {
@@ -54,6 +53,7 @@ p {
     margin-left: 1%;
     background: url('icon/logo-name.png');
     background-position: center;
+    background-size: contain;
     z-index: 1;
 }
 

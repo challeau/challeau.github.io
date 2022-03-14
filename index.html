@@ -102,6 +102,8 @@
     //   logo.style.height = 75 - offset / 10 + 'vh';
     // });
 
+    let begin = document.getElementsByClassName('firstGlance')[0].getBoundingClientRect().bottom;
+    alert(begin + ' vs ' + (0.75 * window.innerHeight));
     window.addEventListener('scroll', function() {
       let container = document.getElementsByClassName('firstGlance')[0];
       let logo = document.getElementsByClassName('logoName')[0];

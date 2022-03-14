@@ -101,6 +101,7 @@
       }
     });
 
+    /* move logo */
     var _containerHeight = 4000;
     var _width, _height, _scrollHeight;
     var _movingElements = [];
@@ -170,7 +171,6 @@
     function loop() {
       _scrollOffset = window.pageYOffset || window.scrollTop;
       _scrollPercent = _scrollOffset/_scrollHeight || 0;
-      rotateLetters();
       updateElements();
       requestAnimationFrame(loop);
     }

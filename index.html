@@ -102,18 +102,16 @@
     //   logo.style.height = 75 - offset / 10 + 'vh';
     // });
 
-    let begin = document.getElementsByClassName('firstGlance')[0].getBoundingClientRect().bottom;
-    alert(begin + ' vs ' + (0.70 * window.innerHeight));
     window.addEventListener('scroll', function() {
       let container = document.getElementsByClassName('firstGlance')[0];
       let logo = document.getElementsByClassName('logoName')[0];
       let containerBottom = container.getBoundingClientRect().bottom;
-      let offsetY = containerBottom / 0.75 * window.innerHeight;
+      let offsetY = containerBottom / (0.75 * window.innerHeight);
       if (containerBottom > 10)
       {
 	console.log(offsetY);
-	logo.style.width = logo.style.width * offsetY * 20 + 'vh';
-	logo.style.width = logo.style.height * offsetY * 20 + 'vh';
+	logo.style.width = logo.style.width * (-1 * offsetY) + 'vh';
+	logo.style.width = logo.style.height * (-1 * offsetY) + 'vh';
       }
     });
   </script>

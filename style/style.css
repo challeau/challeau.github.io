@@ -81,6 +81,7 @@ p {
 .socials img {
     display: inline-block;
     width: 20px;
+    margin-right: 10px;
     height: auto;
 }
 

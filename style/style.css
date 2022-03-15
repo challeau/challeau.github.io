@@ -85,7 +85,8 @@ p {
 }
 
 .socials li {
-   float: left;
+    list-style: none;
+    float: left;
     margin: 5px;
 }
 

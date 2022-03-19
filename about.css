@@ -1,0 +1,45 @@
+/* General */
+:root {
+    --main-bg-color: #F4F0EB;
+    --grey: #888C90;
+    --light-grey: #D9D9D8;
+    --dark-grey: #363F47;
+    --blue: #9EC0D5;
+    --yellow: #F5B83D;
+    --red: #FF6B64;
+    --green: #B8E788;
+}
+
+body {
+    height: 100%;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif !important;
+    font-size: 2.5vh;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    background-color: var(--main-bg-color);
+}
+
+p {
+    padding: 5px 5%;
+    color: var(--dark-grey);
+}
+
+.socials {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    height: fit-content;
+    text-align:;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.socials img {
+    width: 3vh;
+    height: auto;
+    margin-right: 1vh;
+}
+
+.socials a {
+    text-decoration: none;
+}

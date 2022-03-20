@@ -19,7 +19,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Link the stylesheet -->
-    <link rel="stylesheet" href="newStyle.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom fonts -->
     <style>
@@ -37,7 +38,6 @@
 	  font-family: 'Deutschlander';
 	  url('Deutschlander.otf') format('opentype');
       }
-
     </style>
 
     <!-- Favicon -->
@@ -61,9 +61,9 @@
       </ul>
     </nav>
 
-    <div class="firstGlance">
-      <div class="logoName">
-	<img alt="logoName" src="style/icon/logo-name-nobg.png"/>
+    <div class="first-glance">
+      <div class="logo-name">
+	<img alt="logo-name" src="style/icon/logo-name-nobg.png"/>
       </div>
       <div class="title">
 	<h3>Hi! I'm</h3>
@@ -75,25 +75,22 @@
 	  In the meantime, here are my socials:<br/>
 	</p>
 	<div class="socials">
-	  <ul>
-	    <li>
+	    <button class="social-card">
 	      <a href="https://github.com/challeau/" target="_blank" rel="norefferer">
-		<img alt="github logo" src="style/icon/gh.png"/>Github
-	      </a>
-	    </li>
-	    <li>
-	      <a href="https://linkedin.com/in/challeau/"
-		 target="_blank" rel="norefferer">
-		<img alt="linkedin logo" src="style/icon/li.png"/>LinkedIn
-	      </a>
-	    </li>
-	  </ul>
+		<span></span>
+		<i class="fa fa-github fa-lg"></i>Github</a>
+	    </button>
+	    <button class="social-card">
+	      <a href="https://linkedin.com/in/challeau/" target="_blank" rel="norefferer">
+		<span></span>
+		<i class="fa fa-linkedin fa-lg"></i>LinkedIn</a>
+	    </button>
 	</div>
 	
       </div>
     </div>
 
-    <div class="textContents">
+    <div class="text-contents">
       <article>
 	<h2>Here's an article</h2>
 	<p>
@@ -127,8 +124,8 @@
   <script>
     /* resize logo proportionally to scroll*/
     window.addEventListener('scroll', function() {
-      let container = document.getElementsByClassName('firstGlance')[0];
-      let logo = document.getElementsByClassName('logoName')[0];
+      let container = document.getElementsByClassName('first-glance')[0];
+      let logo = document.getElementsByClassName('logo-name')[0];
       let navbar = document.getElementsByClassName('navbar')[0];
       let containerBottom = container.getBoundingClientRect().bottom;
       let offsetY = containerBottom / (0.75 * window.innerHeight);
@@ -163,7 +160,7 @@
     var _cssPrefix = pre.css;
     var _positions = [
       {
-	name: 'logoName',
+	name: 'logo-name',
 	start: {
 	  percent: 0.01,
 	  x: 0.06,

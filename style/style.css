@@ -14,7 +14,7 @@
 
 /* General */
 :root {
-    --main-bg-color: #F4F0EB;
+    --white: #F4F0EB;
     --grey: #888C90;
     --light-grey: #D9D9D8;
     --dark-grey: #363F47;
@@ -29,10 +29,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif !important;
-    font-size: 2.5vh;
+    font-size: 1rem;
     word-wrap: break-word;
     overflow-x: hidden;
-    background-color: var(--main-bg-color);
+    background-color: var(--white);
 }
 
 p {
@@ -62,33 +62,34 @@ p {
 }
 
 .logo img {
-    margin: 0 auto;
     width: 75vh;
     height: 75vh;
 }
 
 .title {
+    place-content: space-around start;
     grid-area: 2 / 2 / 2 / 3;
 }
 
 .title h1 {
     margin: 0;
     padding: 0;
-    color: white;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--dark-grey);
-    font-family: MonumentExtendedUltrabold, Arial, sans-serif;
-    font-size: 2.5rem;
+    color: var(--white);
+/*     -webkit-text-fill-color: white; */
+/*     -webkit-text-stroke-width: 1px; */
+/*     -webkit-text-stroke-color: var(--dark-grey); */
+    font-family: Magilio, Arial, sans-serif;
+    font-size: 5rem;
     letter-spacing: 6px;
 }
 
 .title h3 {
     margin: 0;
     padding: 0;
-    color: var(--grey);
-    font-family: Deutschlander, Aria, sans-serif;
+    color: var(--dark-grey);
+    font-family: Moonrising, Aria, sans-serif;
     font-size: 2rem;
+    letter-spacing: 8px;
 }
 
 .presentation {
@@ -110,20 +111,19 @@ p {
 .social-card {
     position: relative;
     padding: 10px 10px;
-    font-style: emphasis;
-    font-weight: bold;
     text-align: center;
     text-decoration: none;
-    border: 1px solid var(--dark-grey);
+    border: 1px solid var(--white);
     border-radius: 20px;
     mouse: cursor;
-    background-color: var(--main-bg-color);
+    background-color: transparent;
 }
 
 .social-card a {
-    color: var(--dark-grey);
-    font-size: 1.2rem;
-    letter-spacing: 3px;
+    color: var(--white);
+    font-family: MonumentExtended, Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
     text-decoration: none;
 }
 
@@ -139,14 +139,19 @@ p {
 
 i {
     margin-right: 0.7vw;
-    color: var(--dark-grey);
+    color: var(--white);
     text-align: center;
     text-decoration: none;
 }
 
 .social-card:hover, .social-card:hover a, .social-card:hover .fa {
-    color: var(--main-bg-color);
-    background-color: var(--dark-grey);
+    color: var(--blue);
+    background-color: var(--white);
+    opacity: 0.8;
+}
+
+.title .presentation .socials {
+    padding-left: -10vw;
 }
 
 /* Navigation */
@@ -189,5 +194,5 @@ nav {
 
 .navbar li a.active {
     color: var(--dark-grey);
-    background-color: var(--main-bg-color);    
+    background-color: var(--white);    
 }

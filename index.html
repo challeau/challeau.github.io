@@ -25,19 +25,26 @@
     <!-- Custom fonts -->
     <style>
       @font-face {
+	  font-family: Magilio;
+	  src: url('style/fonts/MagilioRegular-8Mxvg.otf') format('opentype');
+      }
+
+      @font-face {
 	  font-family: MonumentExtended;
 	  src: url('style/fonts/MonumentExtended-Regular.otf') format('opentype');
       }
 
       @font-face {
-	  font-family: MonumentExtendedUltrabold;
-	  src: url('style/fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+	  font-family: Moonrising;
+	  src: url('style/fonts/Moonrising.otf') format('opentype');
       }
 
       @font-face {
-	  font-family: 'Deutschlander';
-	  url('Deutschlander.otf') format('opentype');
+	  font-family: Moonrising;
+	  font-style: italic;
+	  src: url('style/fonts/Moonrising Italic.otf') format('opentype');
       }
+
     </style>
 
     <!-- Favicon -->
@@ -130,7 +137,7 @@
       let containerBottom = container.getBoundingClientRect().bottom;
       let offsetY = containerBottom / (0.75 * window.innerHeight);
       if (containerBottom > 0
-	  && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))
+    	  && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))
       {
     	let logoNewSize = 75 - (1 - offsetY) * 100;
     	let containerNewMargin = 25 - (1 - offsetY) * 100;
@@ -138,18 +145,14 @@
     	{
     	  logo.style.width = logoNewSize + 'vh';
     	  logo.style.height = logoNewSize + 'vh';
-   	  if (containerNewMargin > 5)
-  	    container.style.margin = '-1rem -1rem ' + containerNewMargin + 'vh';
-	}
-      else
+    	  if (containerNewMargin > 5)
+    	    container.style.margin = '0 0 ' + containerNewMargin + 'vh';
+    	}
+	else
     	{
     	  logo.style.width = '15vh';
     	  logo.style.height = '15vh';
     	}
-      }
-      else
-      {
-	container.style.margin = '0 0 25vh 0';
       }
     });
 
@@ -191,7 +194,7 @@
     //   }
     // ]
 
-    resize();
+    // resize();
     // initMovingElements();
 
     // function initMovingElements() {

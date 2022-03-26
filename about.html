@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- General information -->
+    <title>challeau's website</title>
+    <meta name="description" content="My portfolio website.">
+    <meta name="author" content="challeau">
+    <meta charset="utf-8" />
+    <base href=""/>
+
+    <!-- Open Graph settings -->
+    <meta property="og:title" content="challeau's website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://challeau.github.io/">
+    <meta property="og:description" content="My portfolio website.">
+    <meta property="og:image" content="style/icon/logo.png">
+
+    <!-- Viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Link the stylesheet -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom fonts -->
+    <style>
+      @font-face {
+	  font-family: MonumentExtended;
+	  src: url('style/fonts/MonumentExtended-Regular.otf') format('opentype');
+      }
+
+      @font-face {
+	  font-family: MonumentExtendedUltrabold;
+	  src: url('style/fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+      }
+
+      @font-face {
+	  font-family: 'Deutschlander';
+	  url('Deutschlander.otf') format('opentype');
+      }
+
+
+      body {
+	  background-color: var(--blue);
+      }
+      .grid {
+	  display: grid;
+	  grid-template-columns: repeat(2, 50vw);
+	  grid-template-rows: repeat(5, 15vh);
+	  gap: 0px;
+	  color: grey;
+	  background-color: white;
+	  justify-content: space-around;
+	  align-content: center;
+      }
+
+      .grid > * {
+	  border: 2px solid red;
+	  z-index: 0;
+      }
+      .one {
+	  grid-area: 1 / 1 / 6 / 2;
+      }
+      .one img {
+	  width: 75vh;
+	  height: 75vh;
+      }
+      .two {
+	  grid-area: 1 / 2 / 2 / 5;
+      }
+      .three {
+	  grid-area: 2 / 2 / 4 / 5;
+      }
+      .four {
+	  grid-area: 4 / 2 / 5 / 5;
+      }
+
+      @media only screen and (max-width: 500px) {
+	  .one { grid-area: 1 / 1 / 2 / 5; }
+	  .two { grid-area: 2 / 1 / 3 / 5; }
+	  .three { grid-area: 3 / 1 / 5 / 5; }
+	  .four { grid-area: 5 / 1 / 6 / 5; }
+}
+    </style>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="style/icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="style/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="style/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="style/icon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- JS scripts-->
+
+  </head>
+
+  <body>
+    <header>
+    </header>
+
+    <div class="grid">
+      <div class="one">
+	<img alt="logo-name" src="style/icon/logo-name-nobg.png"/>
+      </div>
+      <div class="two">two sticks</div>
+      <div class="three">three sticks</div>
+      <div class="four">four</div>
+    </div>
+</body>
+</html>

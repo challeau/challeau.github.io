@@ -41,6 +41,16 @@ p {
     color: var(--dark-grey);
 }
 
+.clickable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url('empty.gif');
+}
+
 /* First glance view when page is loaded */
 .first-glance {
     display: grid;
@@ -128,17 +138,7 @@ p {
     text-decoration: none;
 }
 
-.social-card span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: url('empty.gif');
-}
-
-i {
+.social-icon {
     margin-right: 0.7vw;
     color: var(--white);
     text-align: center;
@@ -152,7 +152,41 @@ i {
 }
 
 .title .presentation .socials {
+    position: absolute;
+    right: 0px;
     padding-left: -10vw;
+}
+
+.scroll-down {
+    position: absolute;
+    top: 83vh;
+    right: 5%;
+    width: fit-content;
+    height: auto;
+    z-index: 3;
+}
+
+.arrow-down {
+    padding: 7px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid var(--dark-grey);
+    border-radius: 50%;
+    position: relative;
+    animation: down 2.5s infinite;
+    -webkit-animation: down 2.5s infinite;
+}
+
+@keyframes down {
+    0% {transform: translate(0);}
+    20% {transform: translateY(15px);}
+    40% {transform: translate(0);}
+}
+
+@-webkit-keyframes down {
+    0% {transform: translate(0);}
+    20% {transform: translateY(15px);}
+    40% {transform: translate(0);}
 }
 
 /* Navigation */

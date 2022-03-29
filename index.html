@@ -87,14 +87,17 @@
       <div class="4 socials">
 	<button class="social-card">
 	  <a href="https://github.com/challeau/" target="_blank" rel="norefferer">
-	    <span></span>
-	    <i class="fa fa-github fa-lg"></i>Github</a>
+	    <span class="clickable"></span>
+	    <i class="social-icon fa fa-github fa-lg"></i>Github</a>
 	</button>
 	<button class="social-card">
 	  <a href="https://linkedin.com/in/challeau/" target="_blank" rel="norefferer">
-	    <span></span>
-	    <i class="fa fa-linkedin fa-lg"></i>LinkedIn</a>
+	    <span class="clickable"></span>
+	    <i class="social-icon fa fa-linkedin fa-lg"></i>LinkedIn</a>
 	</button>
+      </div>
+      <div class="scroll-down">
+	<img class="arrow-down" alt="arrow-down" src="style/icon/arrow-down.svg"/>
       </div>
     </div>
 
@@ -136,8 +139,8 @@
       let logo = document.getElementsByClassName('logo-name')[0];
       let containerBottom = container.getBoundingClientRect().bottom;
       let offsetY = containerBottom / (0.75 * window.innerHeight);
-      if (containerBottom > 0
-    	  && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))
+
+      if (containerBottom > 0 && containerBottom <= (window.innerHeight || document.documentElement.clientHeight))
       {
     	let logoNewSize = 75 - (1 - offsetY) * 100;
     	let containerNewMargin = 25 - (1 - offsetY) * 100;
@@ -175,6 +178,11 @@
       	name: 'navbar',
       	start: {percent: 0.001, x: -0.4, y: 0.0},
       	end: {percent: 0.001, x: 0.0, y: 0.0}
+      },
+      {
+      	name: 'scroll-down',
+      	start: {percent: 0.001, x: 0.0, y: 0.0},
+      	end: {percent: 0.005, x: 0.085, y: 0.01}
       }
     ]
 
@@ -226,8 +234,7 @@
     	  p.current.x = p.current.x + (p.target.x - p.current.x) * 0.1;
     	  p.current.y = p.current.y + (p.target.y - p.current.y) * 0.1;
     	}
-    	_movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + p.current.x + 'px, ' +
-    	  p.current.y + 'px, 0px)';
+    	_movingElements[i].style[_jsPrefix + 'Transform'] = 'translate3d(' + p.current.x + 'px, ' + p.current.y + 'px, 0px)';
       }
     }
 

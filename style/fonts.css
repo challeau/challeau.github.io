@@ -1,0 +1,47 @@
+      @font-face {
+	  font-family: Magilio;
+	  src: url('fonts/MagilioRegular-8Mxvg.otf') format('opentype');
+      }
+
+      @font-face {
+	  font-family: MonumentExtended;
+	  src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
+      }
+
+      @font-face {
+	  font-family: MonumentExtendedUltrabold;
+	  src: url('fonts/MonumentExtended-Ultrabold.otf') format('opentype');
+      }
+
+      @font-face {
+	  font-family: Moonrising;
+	  src: url('fonts/Moonrising.otf') format('opentype');
+      }
+
+      @font-face {
+	  font-family: Moonrising;
+	  font-style: italic;
+	  src: url('fonts/Moonrising Italic.otf') format('opentype');
+      }
+
+      @font-face {
+	  font-family: Quicksand;
+	  src: url('fonts/quicksand.book-regular.otf') format('opentype');
+      }
+
+      @font-face {
+	  font-family: QuicksandLight;
+	  src: url('fonts/quicksand.light-regular.otf') format('opentype');
+      }
+
+      @font-face {
+	  font-family: Quicksand;
+	  font-style: italic;
+	  src: url('fonts/quicksand.lightoblique-regular.otf') format('opentype');
+      }
+
+      @font-face {
+	  font-family: Quicksand;
+	  font-style: bold;
+	  src: url('fonts/quicksand.bold-regular.otf') format('opentype');
+      }

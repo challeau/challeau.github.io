@@ -23,64 +23,77 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom fonts -->
+    <link rel="stylesheet" href="style/fonts.css" />
+
     <style>
-      @font-face {
-	  font-family: MonumentExtended;
-	  src: url('style/fonts/MonumentExtended-Regular.otf') format('opentype');
-      }
-
-      @font-face {
-	  font-family: MonumentExtendedUltrabold;
-	  src: url('style/fonts/MonumentExtended-Ultrabold.otf') format('opentype');
-      }
-
-      @font-face {
-	  font-family: 'Deutschlander';
-	  url('Deutschlander.otf') format('opentype');
-      }
-
-
       body {
 	  background-color: var(--blue);
       }
-      .grid {
-	  display: grid;
-	  grid-template-columns: repeat(2, 50vw);
-	  grid-template-rows: repeat(5, 15vh);
-	  gap: 0px;
-	  color: grey;
-	  background-color: white;
-	  justify-content: space-around;
-	  align-content: center;
+
+      .under-const {
+	  display: inline-block;
+	  align-items: center;
+	  justify-content: space-evenly;
       }
 
-      .grid > * {
-	  border: 2px solid red;
-	  z-index: 0;
+      .title {
+	  display: flex;
+	  flex-flow: column wrap;
+	  position: relative;
+	  padding: 25vh 0 0 15vw;
+	  width: 40%;
+	  text-align: center;
+	  align-items: center;
       }
-      .one {
-	  grid-area: 1 / 1 / 6 / 2;
-      }
-      .one img {
-	  width: 75vh;
-	  height: 75vh;
-      }
-      .two {
-	  grid-area: 1 / 2 / 2 / 5;
-      }
-      .three {
-	  grid-area: 2 / 2 / 4 / 5;
-      }
-      .four {
-	  grid-area: 4 / 2 / 5 / 5;
+      
+      h1 {
+          color: var(--yellow);
+	  -webkit-text-fill-color: var(--yellow);
+	  -webkit-text-stroke-width: 1px;
+	  -webkit-text-stroke-color: var(--white);
+	  font-family: Magilio, Arial, sans-serif;
+	  font-size: 8rem;
+	  letter-spacing: 6px;
       }
 
-      @media only screen and (max-width: 500px) {
-	  .one { grid-area: 1 / 1 / 2 / 5; }
-	  .two { grid-area: 2 / 1 / 3 / 5; }
-	  .three { grid-area: 3 / 1 / 5 / 5; }
-	  .four { grid-area: 5 / 1 / 6 / 5; }
-}
+      h2 {
+	  color: var(--white);
+	  font-family: Quicksand, Arial, sans-serif;
+	  font-style: italic;
+	  font-size: 2.5rem;
+      }
+
+      img {
+	  display: inline-block;
+	  position: absolute;
+	  top: 10vh;
+	  right: 5%;
+	  max-width: 40%;
+	  height: auto;
+      }
+
+      button {
+	  position: relative;
+	  padding: 10px 10px;
+	  width: fit-content;
+	  text-align: center;
+	  border: 1px solid var(--white);
+	  border-radius: 20px;
+	  mouse: cursor;
+	  background-color: transparent;
+      }
+
+      .home a {
+	  color: var(--white);
+	  font-family: Quicksand, Arial, sans-serif;
+	  text-decoration: none;
+      }
+
+      .home:hover, .home:hover a {
+	  color: var(--blue);
+	  background-color: var(--white);
+	  opacity: 0.8;
+      }
     </style>
 
     <!-- Favicon -->
@@ -89,22 +102,22 @@
     <link rel="icon" type="image/png" sizes="32x32" href="style/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="style/icon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-
-    <!-- JS scripts-->
-
   </head>
 
   <body>
     <header>
     </header>
-
-    <div class="grid">
-      <div class="one">
-	<img alt="logo-name" src="style/icon/logo-name-nobg.png"/>
+    <div class="under-const">
+      <div class="title">
+	<h1>Page under construction...</h1>
+	<h2>I'm working hard on building this page! Come back soon :)</h2>
+	<button class="home">
+	  <a href="index.html" target="_self" rel="norefferer">
+	    <span class="clickable"></span>
+	    Go back home</a>
+	</button>
       </div>
-      <div class="two">two sticks</div>
-      <div class="three">three sticks</div>
-      <div class="four">four</div>
+      <img class="cat" alt="construction cat" src="style/icon/construction-cat.svg"/>
     </div>
-</body>
+  </body>
 </html>
